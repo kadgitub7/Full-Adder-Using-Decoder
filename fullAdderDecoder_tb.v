@@ -5,7 +5,7 @@ module fullAdderDecoder_tb();
     wire [7:0] out;
     wire S,Co;
     
-    fullAdderDecoder uut(A,B,C,out);
+    fullAdderDecoder uut(A,B,C,out,S,Co);
     integer i;
     initial begin
         for(i = 0; i<8 ; i=i+1)begin
