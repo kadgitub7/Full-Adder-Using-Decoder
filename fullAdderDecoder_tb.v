@@ -10,7 +10,7 @@ module fullAdderDecoder_tb();
     initial begin
         for(i = 0; i<8 ; i=i+1)begin
             {A,B,C} = i;
-            #10 $display("A=%b, B = %b, C=%b, S = %b, Co = %b");
+            #10 $display("A=%b, B = %b, C=%b, S = %b, Co = %b",A,B,C,S,Co);
         end
     end
 endmodule
