@@ -2,9 +2,10 @@
 
 module fullAdderDecoder(
     input A, B, C,
-    output [7:0] out
+    output [7:0] out,
+    output S,Co
     );
-    wire S,Co;
+    
     assign out[0] = ~A & ~B & ~C;
     assign out[1] = ~A & ~B &  C;
     assign out[2] = ~A &  B & ~C;
